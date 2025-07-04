@@ -1,0 +1,46 @@
+:root {
+  /* Font System */
+  --font-display: 'SF Pro Display', -apple-system, sans-serif;
+  --font-text: 'SF Pro Text', -apple-system, sans-serif;
+  --font-mono: 'SF Mono', monospace;
+
+  /* iOS-inspired Colors */
+  --system-blue: #007AFF;
+  --system-gray: #8E8E93;
+  --system-green: #34C759;
+  --system-indigo: #5856D6;
+  --system-orange: #FF9500;
+  --system-pink: #FF2D55;
+  --system-purple: #AF52DE;
+  --system-red: #FF3B30;
+  --system-teal: #5AC8FA;
+  --system-yellow: #FFCC00;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+}
+/* Dark Mode Variables */
+.dark-mode {
+  --system-background: #1C1C1E;
+  --system-gray-6: #2C2C2E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #EBEBF5;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background: var(--system-blue);
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
+}
